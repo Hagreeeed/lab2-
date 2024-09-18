@@ -21,11 +21,9 @@ public class Abiturient implements Comparable<Abiturient> {
         this.PhoneNumber = PhoneNumber;
         this.EverygRate = EverygRate;
     }
-
     public int getIndex(){
         return index;
     }
-
     public String getSurname(){
         return Surname;
     }
