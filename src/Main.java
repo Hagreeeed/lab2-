@@ -18,7 +18,6 @@ public class Main {
             System.out.println("Невірний вибір дії.");
             System.exit(0);
         }
-
         if (index == 1) {
             System.out.println("Введіть ім'я: ");
             String name = sc.next();
