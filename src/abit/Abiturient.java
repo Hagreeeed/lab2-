@@ -5,47 +5,47 @@ import java.util.Collections;
 public class Abiturient implements Comparable<Abiturient> {
 
     private int index;
-    private String Surname;
-    private String Name;
-    private String MiddleName;
-    private String Adress;
-    private String PhoneNumber;
-    private double EverygRate;
+    private String surname;
+    private String name;
+    private String middleName;
+    private String adress;
+    private String phoneNumber;
+    private double everygRate;
 
     public Abiturient(int index, String Surname, String Name, String MiddleName, String Adress, String PhoneNumber, double EverygRate){
         this.index = index;
-        this.Surname = Surname;
-        this.Name = Name;
-        this.MiddleName = MiddleName;
-        this.Adress = Adress;
-        this.PhoneNumber = PhoneNumber;
-        this.EverygRate = EverygRate;
+        this.surname = Surname;
+        this.name = Name;
+        this.middleName = MiddleName;
+        this.adress = Adress;
+        this.phoneNumber = PhoneNumber;
+        this.everygRate = EverygRate;
     }
     public int getIndex(){
         return index;
     }
     public String getSurname(){
-        return Surname;
+        return surname;
     }
 
     public String getName(){
-        return Name;
+        return name;
     }
 
     public String getMiddleName(){
-        return MiddleName;
+        return middleName;
     }
 
     public String getAdress(){
-        return Adress;
+        return adress;
     }
 
     public String getPhoneNumber(){
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     public double getEverygRate(){
-        return EverygRate;
+        return everygRate;
     }
 
     public void setIndex(int index){
@@ -53,52 +53,52 @@ public class Abiturient implements Comparable<Abiturient> {
     }
 
     public void setSurname(String Surname){
-        this.Surname = Surname;
+        this.surname = Surname;
     }
 
     public void setName(String Name){
-        this.Name = Name;
+        this.name = Name;
     }
 
     public void setMiddleName(String MiddleName){
-        this.MiddleName = MiddleName;
+        this.middleName = MiddleName;
     }
 
     public void setAdress(String Adress){
-        this.Adress = Adress;
+        this.adress = Adress;
     }
 
     public void setPhoneNumber(String PhoneNumber){
-        this.PhoneNumber = PhoneNumber;
+        this.phoneNumber = PhoneNumber;
     }
 
     public void setEverygRate(double EverygRate){
-        this.EverygRate = EverygRate;
+        this.everygRate = EverygRate;
     }
 
     @Override
     public String toString(){
         return "Abiturient{" +
                 "index=" + index +
-                ", Surname='" + Surname + '\'' +
-                ", Name='" + Name + '\'' +
-                ", MiddleName='" + MiddleName + '\'' +
-                ", Adress='" + Adress + '\'' +
-                ", PhoneNumber='" + PhoneNumber + '\'' +
-                ", EverygRate=" + EverygRate +
+                ", Surname='" + surname + '\'' +
+                ", Name='" + name + '\'' +
+                ", MiddleName='" + middleName + '\'' +
+                ", Adress='" + adress + '\'' +
+                ", PhoneNumber='" + phoneNumber + '\'' +
+                ", EverygRate=" + everygRate +
                 '}';
     }
 
     public boolean SearchToName(String Name){
-        return this.Name.equals(Name);
+        return this.name.equals(Name);
     }
 
     public boolean SearchToRateUp(double Rate){
-        return this.EverygRate > Rate;
+        return this.everygRate > Rate;
     }
 
     @Override
     public int compareTo(Abiturient other) {
-        return Double.compare(this.EverygRate, other.EverygRate);
+        return Double.compare(this.everygRate, other.everygRate);
     }
 }
